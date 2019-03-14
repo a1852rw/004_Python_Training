@@ -25,7 +25,4 @@ for item in data['list']:
 	print(str(timeData) + " の風速は " + str(windData) + "m/s です")
 	break
 
-for item in data["city"]:
-	cityName = item["name"]
-	print(cityName)
-#	break
+print("対象の都市は" + data["city"]["name"] + "です")
