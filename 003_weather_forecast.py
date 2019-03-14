@@ -3,6 +3,7 @@
 
 import json
 import requests
+from datetime import datetime
 
 URL_BASE = "http://api.openweathermap.org/data/2.5/forecast?q="
 URL_CITY = "Tokyo"
@@ -20,5 +21,4 @@ for item in data['list']:
 	timeData = item["dt_txt"]
 	
 	print(str(timeData) + " の風速は " + str(windData) + "m/s です")
-
 	break
