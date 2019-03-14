@@ -18,6 +18,7 @@ data = json.loads(jsontext)
 for item in data['list']:
 	windData = item["wind"]["speed"]
 	timeData = item["dt_txt"]
-	print(windData)
-	print(timeData)
+	
+	print(str(timeData) + " の風速は " + str(windData) + "m/s です")
+
 	break
