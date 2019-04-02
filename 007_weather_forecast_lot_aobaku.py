@@ -25,6 +25,6 @@ for item in data['list']:
 	windData = item["wind"]["speed"]
 	timeData = item["dt_txt"]
 	print(str(timeData) + " の風速は " + str(windData) + "m/s です")
-	break
+#	break
 
 print("対象の都市は" + data["city"]["name"] + "です")
