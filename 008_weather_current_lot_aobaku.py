@@ -4,8 +4,9 @@
 import json
 import requests
 
+# 現在の気象情報を表示する
 
-URL_BASE = "http://api.openweathermap.org/data/2.5/forecast?"
+URL_BASE = "http://api.openweathermap.org/data/2.5/weather?"
 LAT = "35.543251"
 LON = "139.517218"
 KEY = "d171c64bee9ad5febbba628f6e1b46b7"
@@ -20,4 +21,4 @@ jsontext = json.dumps(response, indent=2)
 data = json.loads(jsontext)
 
 print("現在の風速：" + str(data["wind"]["speed"]) + "m")
-print("対象の都市は" + data["city"]["name"] + "です")
+print("対象の都市は" + data["name"] + "です")
