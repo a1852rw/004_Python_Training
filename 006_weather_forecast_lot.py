@@ -17,8 +17,9 @@ response = requests.get(URL_BASE + "lat=" +  LAT + "&lon=" + LON  + "&appid=" + 
 jsontext = json.dumps(response, indent=4)
 data = json.loads(jsontext)
 
-#print(jsontext)
+print(jsontext)
 
+'''
 for item in data['list']:
 	windData = item["wind"]["speed"]
 	timeData = item["dt_txt"]
@@ -26,3 +27,4 @@ for item in data['list']:
 	break
 
 print("対象の都市は" + data["city"]["name"] + "です")
+'''
